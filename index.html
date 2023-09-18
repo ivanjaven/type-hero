@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/Typehero thumbnail.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer>
+      const activeTheme = localStorage.getItem("theme");
+      if (JSON.parse(activeTheme) === "dark")
+        document.documentElement.classList.add("dark-mode");
+    </script>
+    <script
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script derfer src="scripts/words.js"></script>
+    <script defer src="scripts/script.js"></script>
+
+    <title>Typehero &mdash; Typing speed</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="typehero logo" src="img/Typehero logo.png" />
+      </a>
+      <h2 class="logo--text">Typehero</h2>
+      <div class="mode">
+        <ion-icon
+          class="moon-icon"
+          name="moon-outline"
+          title="dark-mode"
+        ></ion-icon>
+        <ion-icon class="sun-icon" name="sunny-outline"></ion-icon>
+      </div>
+    </header>
+    <div class="typing-tab">
+      <div class="configbox container">
+        <div class="config">
+          <div class="config-text">
+            <p class="config-btn text--punctuation" data-mode="punctuation">
+              punctuation
+            </p>
+            <p class="config-btn text--numbers" data-mode="numbers">numbers</p>
+            <p class="config-btn text--programming" data-mode="programming">
+              programming
+            </p>
+          </div>
+          <div class="config-separator">|</div>
+          <div class="config-time">
+            <p class="config-btn time time--15 active" data-time="15">15</p>
+            <p class="config-btn time time--30" data-time="30">30</p>
+            <p class="config-btn time time--60" data-time="60">60</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wordsbox">
+        <h2 id="timer">&nbsp</h2>
+        <div id="cursor"></div>
+        <div class="words"></div>
+      </div>
+    </div>
+    <div class="result-tab hidden">
+      <div class="result-grid">
+        <div class="result-wpm result-flex">
+          <p class="wpm">WPM</p>
+          <h2 class="wpm--result">60</h2>
+        </div>
+        <div class="result-accuracy result-flex">
+          <p class="accuracy">accuracy</p>
+          <h2 class="accuracy--result">90&percnt;</h2>
+        </div>
+        <div class="result-time result-flex">
+          <p class="time">time</p>
+          <h2 class="time--result">30s</h2>
+        </div>
+        <div class="result-correct result-flex">
+          <p class="rightWords">correct words</p>
+          <h2 class="rightWords--result">52</h2>
+        </div>
+        <div class="result-wrong result-flex">
+          <p class="wrongWords">wrong words</p>
+          <h2 class="wrongWords--result">9</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <ion-icon class="btn btn--restart" name="refresh-outline"></ion-icon>
+      <ion-icon
+        class="btn btn--next"
+        name="chevron-forward-circle-outline"
+      ></ion-icon>
+    </div>
+    <div class="touchtype-link">
+      <p class="link">
+        Learn touch typing
+        <strong>
+          <a href="https://www.typingclub.com/" target="_blank" rel="noopener"
+            >here</a
+          >
+        </strong>
+      </p>
+    </div>
+  </body>
+</html>
