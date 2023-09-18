@@ -23,7 +23,6 @@ const resultTime = document.querySelector(".time--result");
 const resultRightWords = document.querySelector(".rightWords--result");
 const resultWrongWords = document.querySelector(".wrongWords--result");
 const cursor = document.getElementById("cursor");
-const inputKeyboard = document.getElementById("type-input");
 const body = document.documentElement;
 
 let extraLetter = 0;
@@ -467,10 +466,6 @@ mode.addEventListener("click", function () {
   if (body.classList.contains("dark-mode")) {
     setLocalStorageTheme("dark");
   } else setLocalStorageTheme("light");
-});
-
-body.addEventListener("click", function () {
-  inputKeyboard.focus();
 });
 
 getLocalStorage();

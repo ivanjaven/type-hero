@@ -91,10 +91,6 @@ body {
   cursor: pointer;
 }
 
-#type-input {
-  opacity: 0;
-}
-
 .hide {
   display: none;
 }
